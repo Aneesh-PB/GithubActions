@@ -48,7 +48,7 @@ jobs:
       steps:
         - run: echo "Hello windows"
   package:
-    needs: [build, build-api-app]
+    needs: [build, build-api]
     runs-on: self-hosted
     steps:
       - run: echo "Hello Mac"
